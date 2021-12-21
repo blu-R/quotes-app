@@ -13,14 +13,14 @@ function QuoteBox() {
     );
     const [color, setColor] = useState("#000000");
 
-    document.querySelector("body").style.backgroundColor = color;
+    document.body.style.backgroundColor = color;
 
     const getQuote = () => {
         let number = Math.floor(Math.random() * quotesLength);
         setQuote(quotes[number]);
         setColor(color_generator());
 
-        document.querySelector("body").style.backgroundColor = color;
+        document.body.style.backgroundColor = color;
     };
 
     const color_generator = () => {
