@@ -2,3 +2,7 @@
     display: inline-block;
     cursor: pointer;
 }
+
+.btnNext:hover {
+    filter: invert(0.75);
+}
